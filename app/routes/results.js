@@ -9,5 +9,10 @@ export default Ember.Route.extend({
 		 console.log(responseJSON.artists.items[0]);
 		 return responseJSON.artists.items;
    });
- }
+ },
+ actions: {
+	songLookUp(params) {
+		this.transitionTo('results', params.search);
+	}
+}
 });

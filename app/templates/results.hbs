@@ -1,8 +1,15 @@
-<h1>Results</h1>
-<ul>
-  {{#each model as |search|}}
-		<li>{{search.name}} <i>Followers:	{{search.followers.total}}</i></li>
-    <li>{{search.images}}</li>
-  {{/each}}
-</ul>
-<img src='{{search.images}}'/>
+<div class="row">
+  <div class="col-sm-3">
+    {{search-form songLookUp="songLookUp"}}
+  </div>
+  <div class="col-sm-6">
+    <h1>Results</h1>
+    <ul>
+      {{#each model as |search|}}
+    		<li>{{#link-to 'details' search.id}}{{search.name}}{{/link-to}} <i>Followers:	{{search.followers.total}}</i></li>
+        <li>{{search.images.url}}</li>
+      {{/each}}
+    </ul>
+    <img src='{{search.images}}'/>
+  </div>
+</div>
