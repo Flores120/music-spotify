@@ -1,0 +1,8 @@
+<h1>Results</h1>
+<ul>
+  {{#each model as |search|}}
+		<li>{{search.name}} <i>Followers:	{{search.followers.total}}</i></li>
+    <li>{{search.images}}</li>
+  {{/each}}
+</ul>
+<img src='{{search.images}}'/>
