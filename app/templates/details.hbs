@@ -1,12 +1,21 @@
 <h1>Welcome</h1>
-<!-- {{#each model.name as |artist|}}
-  <h4>{{artist}}</h4>
-{{/each}} -->
-
-
-<h1>{{model.name}}</h1>
+<h1>{{model.artists.name}}</h1>
 <br>
-Followers: {{model.followers.total}} <br>
-Popularity:{{model.popularity}} <br>
-Genres: {{model.genres}} <br>
- <img src="{{model.images.[0].url}}"/>
+<h2>Followers: {{model.artists.followers.total}}</h2>
+  <br>
+<h3>{{model.artists.popularity}}</h3>
+
+<h2>{{model.artists.uri}}</h2>
+ <img src="{{model.artists.images.[0].url}}"/>
+
+<h1>Albums</h1>
+{{#each model.albums as |album|}}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <h2>{{album.name}}</h2>
+      <img src="{{album.images.[0].url}}" width="300px" height="300px"/>
+    </div>
+  </div>
+</div>
+{{/each}}
