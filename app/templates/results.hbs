@@ -1,15 +1,14 @@
 <h1>Results</h1>
-<ul>
-  {{#each model as |search|}}
-    <li> Name: {{search.name}} <br>
-    Followers: {{search.followers.total}} <br>
-    Popularity:{{search.popularity}} <br>
-    Genres: {{search.genres}} <br>
-
-    <img src="{{search.images.[0].url}}" alt="Image" width="300px">
-
-  </li><br>
-    <!-- <a href="{{search.spotify}}" target="_blank">link</a></li> <br> -->
-  {{/each}}
-</ul>
-<img src='{{search.images}}'/>
+  <div class="flex-container">
+      <!-- <ul> -->
+        {{#each model as |search|}}
+          <h1>{{search.name}}</h1>
+          <br>
+          <!-- Followers: {{search.followers.total}} <br>
+          Popularity: {{search.popularity}} <br>
+          Genres: {{search.genres}} <br> -->
+          <img src="{{search.images.[0].url}}" alt="No Image" width="300px" height="300px">
+        <!-- </li><br> -->
+        {{/each}}
+      <!-- </ul> -->
+  </div>

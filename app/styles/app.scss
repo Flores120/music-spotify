@@ -5,4 +5,19 @@ ul{
 
 body {
 	font-family: futura;
+	padding: 80px;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 5%;
+	margin: 5%;
+}
+
+footer {
+	text-align: center;
 }
