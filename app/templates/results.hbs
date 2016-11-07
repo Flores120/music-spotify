@@ -1,14 +1,11 @@
 <h1>Results</h1>
-  <div class="flex-container">
-      <!-- <ul> -->
-        {{#each model as |search|}}
-          <h1>{{search.name}}</h1>
-          <br>
-          <!-- Followers: {{search.followers.total}} <br>
-          Popularity: {{search.popularity}} <br>
-          Genres: {{search.genres}} <br> -->
-          <img src="{{search.images.[0].url}}" alt="No Image" width="300px" height="300px">
-        <!-- </li><br> -->
-        {{/each}}
-      <!-- </ul> -->
-  </div>
+<div class="flex-container">
+  {{#each model as |search|}}
+    {{#link-to 'details' search.id}}{{search.name}}{{/link-to}}
+    Followers: {{search.followers.total}} <br>
+    Popularity:{{search.popularity}} <br>
+    Genres: {{search.genres}} <br>
+
+    <img src="{{search.images.[0].url}}" alt="Image" width="300px" height="300px">
+  {{/each}}
+</div>
