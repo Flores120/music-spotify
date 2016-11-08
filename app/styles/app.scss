@@ -22,7 +22,7 @@ footer {
 	text-align: center;
 }
 
-img {
+#album-cover {
 	width: 300px;
 	height: 300px;
 }
@@ -40,6 +40,11 @@ input {
 input:focus {
     border: 3px solid #555;
 }
+
+.connected-sounds-logo {
+	align-content: center;
+}
+
 .select:hover {
 	opacity: .5;
 }
