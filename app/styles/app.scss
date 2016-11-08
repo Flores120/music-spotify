@@ -49,18 +49,19 @@ img.artist {
 h1.artist-title {
 	font-size: 60px;
 	color: #CE3E4F;
+	font-family: Helvetica Neue;
 }
 
 .artist-size {
 	width: 500px;
 	height: 500px;
 }
-.artistHeader {
-	padding-top: 3px;
-	padding-bottom: 3px;
-	border-top: solid 1px #CE3E4F;
-	border-bottom: solid 1px #CE3E4F;
-}
+// .artistHeader {
+// 	padding-top: 3px;
+// 	padding-bottom: 3px;
+// 	border-top: solid 1px #CE3E4F;
+// 	border-bottom: solid 1px #CE3E4F;
+// }
 
 .flex-container {
 	display: flex;
@@ -70,10 +71,6 @@ h1.artist-title {
 	align-items: center;
 	padding: 5%;
 	margin: 5%;
-}
-
-.glyphicon:hover {
-	opacity: .5;
 }
 
 .main {
