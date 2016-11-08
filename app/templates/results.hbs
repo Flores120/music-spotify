@@ -2,7 +2,7 @@
 <div class="flex-container">
   {{#each model as |search|}}
   {{#if search.images.[0].url}}
-      {{#link-to 'details' search.id}}<img src="{{search.images.[0].url}}" alt="Image" class="select">{{/link-to}}
+  {{#link-to 'details' search.id}}<div class="artist"><img src="{{search.images.[0].url}}" alt="Image" class="select"></div>{{/link-to}}
   {{else}}
   {{/if}}
   {{/each}}
