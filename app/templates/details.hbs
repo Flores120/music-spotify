@@ -1,21 +1,19 @@
 
-<h1 class="text-center">Albums</h1>
 <h1>{{model.artists.name}} {{artist-popularity model.artists.popularity}}</h1>
 <iframe src="https://embed.spotify.com/follow/1/?uri={{model.artists.uri}}&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 <br>
 <h2>Followers: {{model.artists.followers.total}}</h2>
   <br>
- <img src="{{model.artists.images.[0].url}}"/>
+ <img src="{{model.artists.images.[0].url}}" class="artist-size"/>
 
 <h1>Albums</h1>
 <div class="flex-container">
   {{#each model.albums as |album|}}
-    <div class="row">
-        <img src="{{album.images.[0].url}}" width="300px" height="300px"/>
-        <div class="player2">
+
+        <div class="col-md-4 padding-right">
+          <img src="{{album.images.[0].url}}" width="300px" height="300px"/>
           <iframe class="player"src="https://embed.spotify.com/?uri={{album.uri}}&theme=white" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
         </div>
-    </div>
     {{/each}}
 </div>
 
