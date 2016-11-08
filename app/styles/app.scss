@@ -4,41 +4,32 @@ $dustStorm: #E0D0C1;
 
 body {
 	// background-image: linear-gradient(#CE3E4F, #63000C);
-	font-family: Helvetica Neue;
+	font-family: futura;
 	padding: 80px;
 	width: 100%;
 }
 
+h1 {
+ 	font-family: 'Passion One', cursive;
+}
+
 footer {
 	text-align: center;
+	margin-bottom: 2%;
+	margin-top: 2%;
 }
 
 input {
-	font-size: 40px;
-	color: #CE3E4F;
-  width: 1000px;
-	height: 100px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 3px solid #CE3E4F;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none;
-}
-button{
-	position: relative; right: -998px;
-	height: 100px;
-	width: 130px;
-  background-color: white;
-  color: #A00719;
-  border: 2px solid #A00719;
-}
-
-button:hover {
+	width: 130%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
 	outline: none;
-  background-color: #CE3E4F;
-  color: white;
-}
+	border-radius: 5px;
+ }
 
 input:focus {
     border: 3px solid #A00719;
@@ -83,6 +74,10 @@ h1.artist-title {
 
 .glyphicon:hover {
 	opacity: .5;
+}
+
+.main {
+	width: 100%;
 }
 
 .red {
