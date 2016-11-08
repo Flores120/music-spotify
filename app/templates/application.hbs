@@ -1,5 +1,5 @@
 <div class="container">
-  {{#link-to 'index'}}<img src="img/logo.jpg">{{/link-to}}<br>
+  {{#link-to 'index'}}<img src="img/logo.jpg" alt="Logo">{{/link-to}}<br>
   <h1><span class="glyphicon glyphicon-play"{{action 'toggleSidebar'}}></span></h1>
   {{outlet}}
 </div>
@@ -8,13 +8,17 @@
   <a class="item">
     {{#link-to 'index'}}&#x266B; Home{{/link-to}}
   </a>
-  <!-- <a class="item">
-    {{#link-to 'about'}}About{{/link-to}}
+  <a class="item">
+    {{#link-to 'about'}}&#x266A; About{{/link-to}}
   </a>
   <a class="item">
-    {{#link-to 'index'}}Home{{/link-to}}
-  </a> -->
+    {{#link-to 'contact'}}&#x266C; Contact{{/link-to}}
+  </a>
 </div>
 <div class="pusher">
   <!-- Site content !-->
 </div>
+<hr>
+<footer>
+  &copy; <img src="img/connected.png" alt="Footer">
+</footer>
