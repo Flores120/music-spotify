@@ -1,30 +1,20 @@
-ul{
-	list-style-type: none;
-	font-size: 18px;
-}
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+
+$dustStorm: #E0D0C1;
 
 body {
+	// background-color: $dustStorm;
 	font-family: futura;
 	padding: 80px;
+	width: 100%;
 }
 
-.flex-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: center;
-	padding: 5%;
-	margin: 5%;
+h1 {
+	font-family: 'Passion One', cursive;
 }
 
 footer {
 	text-align: center;
-}
-
-#album-cover {
-	width: 300px;
-	height: 300px;
 }
 
 input {
@@ -37,21 +27,52 @@ input {
     transition: 0.5s;
     outline: none;
 }
+
 input:focus {
     border: 3px solid #555;
 }
 
-.connected-sounds-logo {
-	align-content: center;
+ul{
+	list-style-type: none;
+	font-size: 18px;
 }
 
-.select:hover {
+.artist-size {
+	weight: 300px;
+	height: 300px;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 5%;
+	margin: 5%;
+}
+
+.glyphicon:hover {
 	opacity: .5;
 }
 
 .red {
 	color: red;
 }
+
+.padding-right {
+	padding-right: 20px;
+}
+
 .player {
 	position: relative; bottom: 50%;
+}
+
+.select:hover {
+	opacity: .5;
+}
+
+#album-cover {
+	width: 300px;
+	height: 300px;
 }

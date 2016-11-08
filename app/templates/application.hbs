@@ -1,19 +1,19 @@
-<img src="img/logo.png">
 <div class="container">
-  <button class="btn btn-info" {{action 'toggleSidebar'}}>Toggle</button>
+  {{#link-to 'index'}}<img src="img/logo.jpg">{{/link-to}}<br>
+  <h1><span class="glyphicon glyphicon-play"{{action 'toggleSidebar'}}></span></h1>
   {{outlet}}
 </div>
 
 <div class="ui sidebar inverted vertical menu">
   <a class="item">
+    {{#link-to 'index'}}&#x266B; Home{{/link-to}}
+  </a>
+  <!-- <a class="item">
+    {{#link-to 'about'}}About{{/link-to}}
+  </a>
+  <a class="item">
     {{#link-to 'index'}}Home{{/link-to}}
-  </a>
-  <a class="item">
-    <!-- {{#link-to 'contact'}}Contact{{/link-to}} -->
-  </a>
-  <a class="item">
-    <!-- {{#link-to 'index'}}Home{{/link-to}} -->
-  </a>
+  </a> -->
 </div>
 <div class="pusher">
   <!-- Site content !-->
