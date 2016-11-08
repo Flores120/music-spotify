@@ -4,7 +4,10 @@ ul{
 }
 
 body {
-	font-family: futura;
+	color: white;
+	background-color: #CE3E4F;
+	// background-image: linear-gradient(#CE3E4F, #63000C);
+	font-family: Georgia, serif;
 	padding: 80px;
 }
 
@@ -22,23 +25,43 @@ footer {
 	text-align: center;
 }
 
+
 #album-cover {
-	width: 300px;
-	height: 300px;
+	img {
+		padding: 5px;
+		width: 300px;
+		height: 300px;
+	}
 }
 
 input {
-    width: 130%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
+	font-size: 40px;
+	color: #CE3E4F;
+  width: 1000px;
+	height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid #CE3E4F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+button{
+	position: relative; right: -998px;
+	height: 100px;
+	width: 130px;
+  background-color: white;
+  color: #A00719;
+  border: 2px solid #A00719;
+}
+
+button:hover {
+	outline: none;
+  background-color: #CE3E4F;
+  color: white;
 }
 input:focus {
-    border: 3px solid #555;
+    border: 3px solid #A00719;
 }
 
 .connected-sounds-logo {
@@ -54,4 +77,8 @@ input:focus {
 }
 .player {
 	position: relative; bottom: 50%;
+}
+.artist {
+	margin: 5px;
+	background-color: #CE3E4F;
 }
