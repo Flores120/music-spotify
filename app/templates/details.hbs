@@ -1,14 +1,14 @@
 <h1>Welcome</h1>
 <h1>{{model.artists.name}}</h1>
+<iframe src="https://embed.spotify.com/follow/1/?uri={{model.artists.uri}}&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 <br>
 <h2>Followers: {{model.artists.followers.total}}</h2>
   <br>
 <h3>{{model.artists.popularity}}</h3>
-
-<h2>{{model.artists.uri}}</h2>
  <img src="{{model.artists.images.[0].url}}"/>
 
 <h1>Albums</h1>
+
 {{#each model.albums as |album|}}
 <div class="flex-container">
   <h2>{{album.name}}</h2>

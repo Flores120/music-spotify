@@ -12,14 +12,14 @@ export default Ember.Route.extend({
 
  return Ember.RSVP.hash({
    artists: Ember.$.getJSON(url).then(function(responseJSON) {
+     console.log(responseJSON);
      return responseJSON;
   }),
   albums: Ember.$.getJSON(url2).then(function(responseJSON) {
-    // console.log(responseJSON.items);
+    console.log(responseJSON.items);
     return responseJSON.items;
   }),
   tracks: Ember.$.getJSON(url3).then(function(responseJSON) {
-    console.log(responseJSON);
     return responseJSON.tracks;
   })
 });
