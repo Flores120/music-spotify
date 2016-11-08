@@ -2,11 +2,7 @@
 <div class="flex-container">
   {{#each model as |search|}}
   {{#if search.images.[0].url}}
-<<<<<<< HEAD
-      {{#link-to 'details' search.id}}<img src="{{search.images.[0].url}}" alt="Image" class="select" id="album-cover">{{/link-to}}
-=======
-  {{#link-to 'details' search.id}}<div class="artist"><img src="{{search.images.[0].url}}" alt="Image" class="select"></div>{{/link-to}}
->>>>>>> alvaro-branch
+  {{#link-to 'details' search.id}}<div class="artist"><img src="{{search.images.[0].url}}" alt="Image" class="select artist"></div>{{/link-to}}
   {{else}}
   {{/if}}
   {{/each}}

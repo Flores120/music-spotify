@@ -3,16 +3,10 @@
 $dustStorm: #E0D0C1;
 
 body {
-	color: white;
-	background-color: #CE3E4F;
 	// background-image: linear-gradient(#CE3E4F, #63000C);
-	font-family: Georgia, serif;
+	font-family: Helvetica Neue;
 	padding: 80px;
 	width: 100%;
-}
-
-h1 {
-	font-family: 'Passion One', cursive;
 }
 
 footer {
@@ -55,9 +49,26 @@ ul{
 	font-size: 18px;
 }
 
-.artist-size {
-	weight: 300px;
+img.artist {
+	width: 300px;
 	height: 300px;
+	padding: 5px;
+}
+
+h1.artist-title {
+	font-size: 60px;
+	color: #CE3E4F;
+}
+
+.artist-size {
+	width: 500px;
+	height: 500px;
+}
+.artistHeader {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-top: solid 1px #CE3E4F;
+	border-bottom: solid 1px #CE3E4F;
 }
 
 .flex-container {
