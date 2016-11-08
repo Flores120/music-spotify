@@ -16,7 +16,6 @@ export default Ember.Route.extend({
      return responseJSON;
   }),
   albums: Ember.$.getJSON(url2).then(function(responseJSON) {
-    console.log(responseJSON.items);
     return responseJSON.items;
   }),
   tracks: Ember.$.getJSON(url3).then(function(responseJSON) {
