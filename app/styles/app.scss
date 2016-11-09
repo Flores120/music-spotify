@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Passion+One');
 
 $dustStorm: #E0D0C1;
+$red: #CE3E4F;
 
 body {
 	// background-image: linear-gradient(#CE3E4F, #63000C);
@@ -20,6 +21,10 @@ footer {
 }
 
 input {
+	position: relative;
+	right: -150%;
+	bottom: 400%;
+	z-index: 1;
 	width: 130%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -32,7 +37,7 @@ input {
  }
 
 input:focus {
-    border: 3px solid #A00719;
+    border: 3px solid $red;
 }
 
 ul{
@@ -62,6 +67,15 @@ h1.artist-title {
 // 	border-top: solid 1px #CE3E4F;
 // 	border-bottom: solid 1px #CE3E4F;
 // }
+
+.button-home {
+	position: relative; right: -200%; bottom: 10%;
+	z-index: 1;
+}
+
+.artistHeader {
+	box-shadow: 0px 0px 10px 0px $red;
+}
 
 .flex-container {
 	display: flex;
