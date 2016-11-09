@@ -4,7 +4,6 @@ $dustStorm: #E0D0C1;
 $red: #CE3E4F;
 
 body {
-	// background-image: linear-gradient(#CE3E4F, #63000C);
 	font-family: futura;
 	padding: 80px;
 	width: 100%;
@@ -61,12 +60,6 @@ h1.artist-title {
 	width: 500px;
 	height: 500px;
 }
-// .artistHeader {
-// 	padding-top: 3px;
-// 	padding-bottom: 3px;
-// 	border-top: solid 1px #CE3E4F;
-// 	border-bottom: solid 1px #CE3E4F;
-// }
 
 .button-home {
 	position: relative; right: -200%; bottom: 10%;
@@ -83,6 +76,7 @@ h1.artist-title {
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
+	align-content: stretch;
 	padding: 5%;
 	margin: 5%;
 }
