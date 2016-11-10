@@ -1,7 +1,10 @@
-# Music-app
+# Connected Sounds
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### By Megan Kaluza, Nhate Hoang, Alvaro Flores, Tam Nguyen - 11/9/2016
+
+## Description
+
+This project contains a search input field to find information on music artists utilizing Ember framework. The project implements Spotify Web API, incorporating artist, album, and track endpoints to return information on the music artist. We incorporated complementary colors for the design palette, reflecting the opposite colors of green and black from the Spotify application. Nevertheless, the project aims to provide the user a unique experience when searching artists and listening to music in a way that's  aesthetically pleasing.
 
 ## Prerequisites
 
@@ -15,8 +18,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd music-app`
+* `git clone https://github.com/Flores120/music-spotify` this repository
+* `cd music-spotify`
 * `npm install`
 * `bower install`
 
@@ -25,29 +28,22 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Technologies Used
 
-Make use of the many generators for code, try `ember help generate` for more details
+Ember
 
-### Running Tests
+JavaScript
 
-* `ember test`
-* `ember test --server`
+Node
 
-### Building
+Gulp
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+CSS
 
-### Deploying
+HTML
 
-Specify what it takes to deploy your app.
+### License
 
-## Further Reading / Useful Links
+This software is licensed under the MIT license.
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 **Megan Kaluza** **Nhate Hoang** **Alvaro Flores** **Tam Nguyen**
