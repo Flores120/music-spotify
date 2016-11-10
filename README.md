@@ -46,4 +46,4 @@ HTML
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2016 **Megan Kaluza** **Nhate Hoang** **Alvaro Flores** **Tam Nguyen**
+Copyright (c) 2016 **Megan Kaluza**, **Nhate Hoang**, **Alvaro Flores**, **Tam Nguyen**
